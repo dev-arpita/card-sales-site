@@ -2,7 +2,8 @@
 
 const menuBtn = document.querySelector('.menu')
       panel = document.querySelector('.filter')
-      panelStyles = window.getComputedStyle(panel);
+      panelStyles = window.getComputedStyle(panel)
+      hearts = document.querySelectorAll('.far');
 
 menuBtn.addEventListener('click', () => {
 
@@ -18,6 +19,11 @@ menuBtn.addEventListener('click', () => {
 document.addEventListener('mouseup', (event) => {
     if (panelStyles.getPropertyValue('clip-path') === 'circle(100% at 50% 50%)') {
         if(!panel.contains(event.target))
-            panel.style.clipPath = 'circle(0% at 100% 0%)'
+            panel.style.clipPath = 'circle(0% at 100% 0%'
     }
 })
+
+function changeHeart(x) {
+    x.classList.toggle("fas")
+    x.classList.toggle("far")
+}

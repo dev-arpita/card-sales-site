@@ -70,7 +70,6 @@ input {
     width: 80%;
     height: 80%;
     background: transparent;
-    /* background: cyan; */
 }
 .filter-section {
     display: none;
@@ -83,6 +82,7 @@ input {
     background: #FFFFFF;
     box-shadow: 11px 18px 54px rgba(0, 0, 0, 0.11);
     border-radius: 6px;
+    transition: display .3s ease-in-out;
 }
 .filter-list {
     padding: 1rem;
@@ -163,21 +163,17 @@ input {
         width: 90%;
     }
     .filter-section {
-        /* left: 77%;
-        top: 16%; */
         left: 85%;
-        top: 16%;
-        /* left: 74%;
-        top: 12%; */
+        top: 19%;
     }
     .table-head-row {
         width: 1200px;
         padding: 1rem 3rem;
         margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            background: #008AD8;
-            border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        background: #008AD8;
+        border-radius: 6px;
     }
     .table-content {
         padding: 1.5rem;
