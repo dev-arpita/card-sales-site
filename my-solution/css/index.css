@@ -63,21 +63,14 @@ input {
     background: #FFFFFF;
     padding: 0.25rem;
 }
-.filter-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 80%;
-    background: transparent;
-}
+
 .filter-section {
     display: none;
     width: 16.063rem;
     height: 12.875rem;
     position: absolute;
-        left: 40%;
-        top: 18%;
+        left: 32%;
+        top: 14%;
     padding: 1rem;
     background: #FFFFFF;
     box-shadow: 11px 18px 54px rgba(0, 0, 0, 0.11);
@@ -94,9 +87,7 @@ input {
     display: inline-block;
     margin-left: 1.25rem;
 }
-.filter-section:nth-of-type(4){
-    margin-bottom: 0;
-}
+
 .table-head-row {
     display: none;
 }
@@ -135,7 +126,8 @@ input {
     Line-height: 100%;
     grid-area: price;
 }
-.like {
+.far,
+.fas {
     grid-area: icon;
     justify-self: end;
 }
@@ -163,8 +155,8 @@ input {
         width: 90%;
     }
     .filter-section {
-        left: 85%;
-        top: 19%;
+        left: 77%;
+        top: 15%;
     }
     .table-head-row {
         width: 1200px;
@@ -196,7 +188,8 @@ input {
         width: 20%;
         text-align: center;
     }
-    .like {
-        padding-left: 8rem;
+    .far,
+    .fas {
+        margin-left: 8rem;
     }
 }

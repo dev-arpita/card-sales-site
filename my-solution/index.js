@@ -1,24 +1,20 @@
-const filterEl =  document.getElementById("filter-container")
-    likeEl = document.querySelectorAll(".like");
-console.log(likeEl)
-document.getElementById("filter-btn").addEventListener("click", ()=> {
-    if (document.getElementById("filter-section").style.display === "none"){
-        document.getElementById("filter-section").style.display = "block"
+const filterEl =  document.getElementById("filter-section")
+      menuBtn = document.getElementById("filter-btn")
+      likeEl = document.querySelectorAll(".far");
+
+menuBtn.addEventListener("click", ()=> {
+    if (filterEl.style.display === "none"){
+        filterEl.style.display = "block"
     }
     else {
-        document.getElementById("filter-section").style.display = "none"
+       filterEl.style.display = "none"
     }
 })
-likeEl.addEventListener("click", ()=> {
-    console.log("liked")
+
+likeEl.forEach(item => {
+    item.addEventListener("click", ()=> {
+        item.classList.toggle("fas");
+    })
 })
 
-// filterEl.addEventListener("click", ()=> {
-//      document.getElementById("filter-section").style.display = "none"
-// })
-// document.addEventListener("click", (e)=>{
-//     if(document.getElementById("filter-section").style.display === "block"){
-//         if(!document.getElementById("filter-section").contains(e.target))
-//           document.getElementById("filter-section").style.display = "none"
-//     }
-// })
+
